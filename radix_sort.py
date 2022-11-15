@@ -5,6 +5,10 @@ def counting_sort(arr, divident):
         my_dict[i] = []       
     for value in arr:
         index = (value//divident)%10
+        """
+        For descending order
+        my_dict[10-index-1].append(value)
+        """
         my_dict[index].append(value)
     new_arr = []
     for key, value in my_dict.items():
