@@ -15,6 +15,11 @@ def counting_sort(arr):
         value = arr[index]
         new_index = count_arr[value]-1
         sorted_arr[new_index] = value
+        """
+        For Descending order
+        new_index = count_arr[value]
+        sorted_arr[len(arr)-new_index]=value 
+        """
         count_arr[value]-=1
     return sorted_arr
 #Running Usecase
