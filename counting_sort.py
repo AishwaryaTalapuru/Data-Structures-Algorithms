@@ -26,3 +26,7 @@ def counting_sort(arr):
 inputs = [[1, 3, 2, 4, 5], [1, 2, 4, 5], [5, 4, 2, 1], [7, 5, 9, 2, 1]]
 for elem in inputs:
     print("The ascending order of ", elem, " is ", counting_sort(elem))
+#Time Complexity of counting sort - O(n+k)
+#where n is the number of input elements
+#k is the range of elements
+#Space Complexity - O(n)
