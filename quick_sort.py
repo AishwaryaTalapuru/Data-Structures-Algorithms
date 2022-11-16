@@ -24,7 +24,7 @@ def quick_sort(arr):
             high-=1
         """
         Code for descending order
-        while high >= len(arr)-1 and arr[low]<=pivot
+        while high >= 0 and arr[high]<=pivot
         """
         while high >= 0 and arr[high]>=pivot:
             high-=1
