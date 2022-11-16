@@ -12,12 +12,20 @@ def quick_sort(arr):
     while low < high:
         if low<len(arr)-1:
             low+=1
+        """
+        Code for descending order
+        while low <= len(arr)-1 and arr[low]>pivot
+        """
         while low <= len(arr)-1 and arr[low]<pivot:
             low+=1
             if low==len(arr)-1:
                 break
         if high > 0:
             high-=1
+        """
+        Code for descending order
+        while high >= len(arr)-1 and arr[low]<=pivot
+        """
         while high >= 0 and arr[high]>=pivot:
             high-=1
             if high==0:
