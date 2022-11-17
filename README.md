@@ -1,2 +1,3 @@
 # Data-Structures-Algorithms
-Contains code for Counting Sort
+Contains code for Sesrching and Sorting Algorithms
+
