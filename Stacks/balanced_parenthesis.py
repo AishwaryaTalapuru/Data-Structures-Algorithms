@@ -15,4 +15,4 @@ inputs = ["(())", "()(())", "(", ")", "((((", "))()"]
 for elem in inputs:
     print("Is the list of parenthesis ", elem , " balanced ? ", check_parenthesis(elem, stack_obj))
 #Time Complexity - O(n) where n is the size of the input string
-#Space Complexity - O(n) where n is the size of the input string
+#Space Complexity - O(1) where n is the size of the input string
