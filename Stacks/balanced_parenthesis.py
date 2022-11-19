@@ -1,18 +1,4 @@
-class Stack:
-    def __init__(self):
-        self.stack = []
-    def push(self, element):
-        self.stack.append(element)
-    def pop(self):
-        elem = self.stack[-1]
-        self.stack = self.stack[:-1]
-        return elem
-    def peek(self):
-        return self.stack[-1]
-    def show(self):
-        return self.stack[::-1]
-    def get_length(self):
-        return len(self.stack)
+from Stack import Stack 
 def check_parenthesis(a, obj):
     if len(a)%2==0:
         for elem in a:
