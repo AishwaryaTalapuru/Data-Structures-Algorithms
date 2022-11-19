@@ -29,3 +29,4 @@ for index in range(len(inputs)):
 #Total Time Complexity for one string is O(n)*O(m) 
 # where n is the size of the input string
 # m is the number of closing braces in the input string
+#Space Complexity -O(1)
