@@ -1,4 +1,5 @@
 #Given a sorted array, identify three numbers that add up to the target
+#i!=j!=k and the result srr should not conatin dupilcates
 def three_sum(arr, target):
     res = []
     for k in range(0, len(arr)-2, 1):
@@ -6,8 +7,10 @@ def three_sum(arr, target):
         i = k+1
         while i < j:
             if arr[i]+arr[j]+arr[k]==target:
-                res.append([arr[k], arr[i], arr[j]])
-                break
+                if [arr[k], arr[i], arr[j]] not in res:
+                    res.append([arr[k], arr[i], arr[j]])
+                i+=1
+                j-=1
             elif arr[i]+arr[j]+arr[k] > target:
                 j-=1
             else:
